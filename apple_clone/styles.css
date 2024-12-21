@@ -1,3 +1,7 @@
-body {
-    min-width: 320px;
+.header {
+    background-color: gray;
+}
+
+.subheader {
+    background-color: white;
 }

@@ -1,0 +1,51 @@
+BASH Quick Reference Sheet:
+
+nano: opens terminal editor, creates file in current directory if not already present
+
+touch: creates new file in current directory
+
+chmod +x file.sh: gives bash script executable privileges
+
+./file.sh: run script
+
+&&: execute two commands on the same line (chmod +x file.sh && ./file.sh 
+will make script executable and run it)
+
+name=: variable declaration (no spaces)
+$name: variable instance
+
+read name: assign variable from user input
+
+$1, $2: first and second arguments entered after ./filename.sh
+
+variable=$(bash_command): Allows a bash command (whoami, pwd) to be stored and called as a variable
+
+curl: access a website from the terminal
+
+.bashrc: script that runs at login
+
+Export <variable>: make an environmental variable available in your script
+
+Bash env variables: https://www.shell-tips.com/bash/environment-variables/#gsc.tab=0
+
+|| : double pipe == OR
+&& : AND
+
+elif: else-if
+
+Conditional syntax:
+if [[ condition 1 == true ]]; then
+	echo "Yes"
+else
+	echo "No"
+fi
+
+Loop syntax:
+
+x=1
+
+while [[ $x -le 100 ]]
+do 
+    echo "Hey, I just did $x pushups."
+    (( x ++ ))
+done
